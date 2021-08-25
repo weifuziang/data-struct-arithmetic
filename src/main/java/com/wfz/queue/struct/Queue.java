@@ -9,8 +9,10 @@ public class Queue {
 
     //1. 构造器
     public Queue(int arrMax) {
+
         this.arrMax = arrMax;
         this.arr = new int[arrMax];
+
     }
 
     //2. 极端情况，队列是否满了
@@ -22,6 +24,13 @@ public class Queue {
             System.out.println("队列可继续插入！！");
         }
     }
+
+    //3. 添加
+
+
+    //4. 展示
+
+    //5. 返回队列首元素
 
 
 }
