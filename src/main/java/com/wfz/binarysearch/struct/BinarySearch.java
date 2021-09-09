@@ -18,25 +18,21 @@ public class BinarySearch {
 
         int middle = (left + right) / 2;
 
+        //递归到最后没找到元素，则返回-1，方法出栈
         if (left > right) {
 
             return -1;
         }
 
-        if (target < arr[middle]) {
-
-            System.out.println("<");
+        if (target < arr[middle]) {//目标元素小于middle元素，则向左边查找
 
             return binarySearch(arr, left, middle - 1, target);
 
-        } else if (target > arr[middle]) {
-
-            System.out.println(">");
+        } else if (target > arr[middle]) {//目标元素大于middle元素，则向右边查找
 
             return binarySearch(arr, middle + 1, right, target);
 
-        } else {
-
+        } else {//递归找到了对应元素，则返回元素，方法出栈
             return middle;
         }
 
