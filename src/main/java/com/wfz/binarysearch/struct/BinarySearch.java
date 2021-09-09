@@ -3,6 +3,10 @@ package com.wfz.binarysearch.struct;
 public class BinarySearch {
 
 
+    /**
+     *  二分查找struct
+     * @param args
+     */
     public static void main(String[] args) {
 
         int[] arr = {1, 6, 8, 10, 12, 54, 80, 100};
