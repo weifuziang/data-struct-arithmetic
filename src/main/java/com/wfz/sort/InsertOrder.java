@@ -1,4 +1,4 @@
-package com.wfz.insertOrder.struct;
+package com.wfz.sort;
 
 import java.util.Arrays;
 
