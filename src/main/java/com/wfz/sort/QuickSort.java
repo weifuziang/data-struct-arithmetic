@@ -46,7 +46,6 @@ public class QuickSort {
 
         while (left < right) {
 
-
             //中间元素数据的左边元素数据，从最左边开始和中间元素数据不断比较，
             //直找到一个大于等于中间元素数据的元素数据，停止循环，并获取到当前left
             //最坏的结果就是找到和middleValue相等的值
@@ -65,11 +64,13 @@ public class QuickSort {
             if (left >= right) {
                 break;
             }
-
             System.out.println("left: " + left + "|" + arr[left] + "  ====  " + "right: " + right + "|" + arr[right]);
             int tmp = arr[left];
             arr[left] = arr[right];
             arr[right] = tmp;
+
+//==================================集合中出现了重复数据，且当重复数据成为了middleValue值时，则必须需要如下的判断，否则出现死循环=======================================
+
 
             //如果交换完后，发现这个arr[l] == pivot值 相等 r--， 前移
             //相当于，右边已经循环到了middleValue，可以不动了，此时 这个条件while (arr[right] > middleValue)
@@ -88,10 +89,9 @@ public class QuickSort {
 
             }
 
-
+//=========================================================================================================================================================
 
         }
-
 
         // 如果 l == r, 必须l++, r--, 否则为出现栈溢出
         if (left == right) {
