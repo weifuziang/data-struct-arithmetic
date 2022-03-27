@@ -10,13 +10,17 @@ public class QuickSort {
     2.1 QuickSort
 
         a. 思路分析
-            1. 取出集合中的中的位置的元素middle，然后逐一拿两边的元素去和比较；
+            1. 取出集合中的中的位置的元素middle，然后依次拿两边的元素进行比较；
             2. 将大于元素middle的放到它的右边，将小于元素middle的放到它的左边；
             3. 取出元素middle到最左边元素的中间位置的元素middle2，按照上述2的方式比较；
             4. 同样，取出元素middle到最右边元素的中间位置的元素middle3，按照上述的方式比较；
             5. 递归循环上述 1、2、3、4步骤，直到最终的集合是一个有序的集合位置；
 
         b. 核心思想
+            1. 循环判断
+            2. 比较大小，交换
+            3. 递归调取
+
 
      */
 
@@ -114,6 +118,15 @@ public class QuickSort {
 
         }
 
+    }
+
+
+    public static String QuickSort2(int[] arr) {
+
+        int middleIndex = arr.length / 2;
+
+
+        return Arrays.toString(arr);
     }
 
 }
