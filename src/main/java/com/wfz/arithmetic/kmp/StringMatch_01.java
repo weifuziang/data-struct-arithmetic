@@ -31,7 +31,7 @@ public class StringMatch_01 {
     }
 
 
-    /**
+    /**通过子字符串的匹配值表，实现查找字符串算法
      * @param str1 主字符串
      * @param str2 子字符串
      * @param next 部分匹配值表
